@@ -58,6 +58,7 @@ print("abc", type("abc"))  #  abc <class 'str'>
 print(isinstance(1, int))  # isinstance() 객체 type 확인 함수 
 print(isinstance(1.2, int))
 
+
 print('\n') # console 줄바꿈
 print('-----집합형 자료형 ------')  # 알아둬아함 ! 
 print((1), type((1)))  # int 집합형 자료형 아님 - 다른것과 비교하기위해 작성해놓음
