@@ -2,8 +2,11 @@
 # 문자열 자료형 - 순서O, 수정 불가
 s = 'sequence' # s = "sequence" s= """seqence"""
 print(s)
-print(len(s), s.count('e')) # e가 몇개 있는지
-print(s.find('e'), s.find('e', 3), s.rfind('e'))
+print(len(s))   #  len(s) >> s의 길이
+print(s.count('e')) # s.count(e) >> e가 몇개 있는지
+# find는 왼쪽에서부터 찾고, rfind는 오른쪽에서 부터 찾음
+# find('e')e가 처음으로 나오는 index값, find('e', 3, 6) index값 3부터 6까지중 e가 처음으로 나오는 index값 
+print(s.find('e'), s.find('e', 3, 6), s.rfind('e'))
 # 문자열 관련함수 다수...
 
 ss = 'kbs'
@@ -17,15 +20,15 @@ print(s[-1], s[-4:-1], s[1:6:2])  # [1:6:2] 1부터 6까지 2번째 마다.
 # s[0] = 'k' # TypeError: 'str' object does not support item assignment
 
 ss2 = 'kbs mbc'
-ss3 = ss2.split(sep=' ')
-print(ss3) # ['kbs', 'mbc']
+ss3 = ss2.split(sep=' ')    # sep=' ' 의 내용을 기준으로 데이터를 분리해 list로 저장함
+print(ss3, type(ss3))   # ['kbs', 'mbc']
 
-print(":".join(ss3))
+print(":".join(ss3))    # list를 value사이에 :값을 넣어 출력
 
 a = 'life is too short'
-b = a.replace("life", 'Java')
+b = a.replace("life", 'Java')   # life(앞)값을 Java(뒤)로 바꿔줌
 print(b)
-#.................
+#....................................
 
 print('\nList type : 순서O,. 여러종류의 값을 기억, 변경O [요소,.....]')
 family = ['엄마', '아빠', '나', 123, 12.345]
@@ -82,6 +85,7 @@ print(b) # set()이라는 결과가 나옴 - 비어있다는 의미
 
 li = [1, 2, 2, 2, 3, 4, 5, 5, 5, 2, 2]
 print(li)
+
 # 중복제거
 im = set(li) 
 li = list(im)
@@ -93,8 +97,21 @@ print(mydic, type(mydic))
 
 dic = {'파이썬':'뱀','자바':'커피','스프링':'봄'}
 print(dic, type(dic))
-print(dic['자바']) # 키로 값을 참조
-# print(
+print(dic['자바'])    # 키로 값을 참조
+# print(dic['커피'])    # value로하면 오류
 
+dic['겨울'] = '눈' # key,value 추가
+print(dic)
+
+del dic['겨울']   # key와 해당하는 key의 value 삭제
+print(dic)
+dic.clear() # 모든 key, value 삭제
+print(dic)
+
+dic = {'파이썬':'뱀','자바':'커피','스프링':'봄'}
+print(dic.keys())   # key값 출력
+print(dic.values()) # value 값 출력
+print(dic['자바'])    # 해당하는 key의 value 출력 ( 단, 해당하는 key명이 존재하지않으면 오류 )
+print(dic.get('자바'))    # 해당하는 key의 value 출력 ( 해당하는 key명이 존재하지않으면 None 출력  - 오류를 피하고자 하면 사용 )
 
 
