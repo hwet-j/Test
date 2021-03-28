@@ -5,6 +5,7 @@ var = 5
 if var >= 3:
     print('크구나')
     print('참일경우 실행')
+    
 print('계속')
 
 if var < 3:
@@ -12,6 +13,7 @@ if var < 3:
     print('참일경우 실행')
 else:
     print('거짓일경우 실행')
+    
 print('계속2')
 
 print()
