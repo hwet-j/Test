@@ -25,8 +25,9 @@
 1. 수정한 파일 혹은 폴더 우클릭 -> Team -> Commit -> Commit Message 입력란에 업로드 내용을 입력해주고 Commit 클릭
  ===> 이유는 모르겠지만 Commit and Push로 하면 수정이 바로 이루어지지 않고 오류도 자주 일어남 
  
-2. 1번에서 우클릭한 곳에서 다시 우클릭 -> Team -> Repository -> Push Branch 'master'..... 클릭
+2. Team -> Repository -> Pull 클릭
 
-3. Preview 클릭  -> Push 클릭 하면 끝  ===> github에 수정되었는지 확인
+3. 우클릭 -> Team -> Repository -> Push Branch 'master'..... 클릭
 
-4. 만일 2번에서 막히면 Team -> Repository -> Pull 클릭 하고 다시 시도 해볼것.
+4. Preview 클릭  -> Push 클릭 하면 끝  ===> github에 수정되었는지 확인
+
