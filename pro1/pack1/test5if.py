@@ -1,6 +1,10 @@
 '''
 조건 판단문 if 
 '''
+# if문을 한줄로 작성해 줄 수 있다. 
+# result = a * 2 if a > 5 else a + 2
+# if, elif else로 구분
+
 var = 5
 if var >= 3:
     print('크구나')
