@@ -11,7 +11,7 @@ else:  # while문이 정상적으로 끝이 났는지 (break문을 만났는지)
 print('while 수행 후%d'%a)
 
 # 홀수, 짝수 확인
-# while 1:  # 과 같이 무한루프 돌릴수있다. ( 0을 작성하면 안됨 )
+# while True: 와 같이 무한루프 돌릴수있다. ( True대신 숫자 사용해도 같음 하지만 0을 작성하면 안됨 )
 while True:
     a = int(input('숫자 입력:'))
     if a == 0:
