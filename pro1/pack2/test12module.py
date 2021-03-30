@@ -5,8 +5,8 @@ print(a)
 def aa():
     print('aa 만세')
     
-# 외부 모듈의 멤버 사용하기
-import pack2.test12my # 경로 지정
+# 외부 모듈(사용자정의)의 멤버 사용하기
+import pack2.test12my # 경로 지정 
 
 print('tot :', pack2.test12my.tot)
 
