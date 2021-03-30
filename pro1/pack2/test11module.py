@@ -5,7 +5,7 @@
 
 # 내장된 표준 모듈(로딩 필요없음) 일부 사용해보기
 print('뭔가를 하다가.. 외부 모듈 필요하면 import module명 하고 사용')
-print(sum([2,3]))
+print(sum([2,3]))   # sum은 기본적으로 가능
 
 import sys
 print('모듈 경로 :', sys.path)
