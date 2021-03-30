@@ -1,4 +1,8 @@
+# 일급 객체  : 변수나 데이터에 할당 가능, 인자로 넘기기 가능, 리턴값으로 리턴하기 가능
 # 일급 함수 : 함수 안에 함수 선언 가능, 인자로 함수 사용, 반환값이 함수 가능
+# 함수가 다른 일급 객체와 동일하게 다루어질때, 일급 함수라고 지칭한다.
+# def, lambda, filter,재귀함수, 함수장식자
+# https://wjddyd66.github.io/python/Python-Function2/
 
 def func1(a, b):
     return a + b
@@ -44,7 +48,8 @@ print(list(filter(lambda a:a < 5, range(10))))
 print(tuple(filter(lambda a:a % 2, range(10))))  # 0,1 에서 1일때가 True
 
 print('~~~' * 10)
-# 함수 장식자 - meta 기능이 있다. @함수명
+# 함수장식자(Decorator) 다른 함수를 감싼 함수. meta의 기능이 있다.
+# 함수 장식자 사용X
 def make2(fn):
     return lambda : '안녕' + fn()
 
@@ -58,6 +63,7 @@ hi = make2(make1(hello))  # 괄호안의 값들은 함수의 매개변수 fn에 
 print(hi())
 print()
 
+# 함수 장식자 사용
 @make2
 @make1
 def hello2():
@@ -65,9 +71,25 @@ def hello2():
 
 print(hello2())
 
-hi2 = hello2()
+# 함수형태() 를 작성위치
+hi2 = hello2()  
 print(hi2)
+
 hi2 = hello2
 print(hi2())
-hi2 = hello2
+# 어디에도 존재하지 않으면 주소값(?)만 출력
+hi2 = hello2    
 print(hi2)
+
+'''
+재귀함수(Recursive Call)
+계속해서 함수 자기자신을 호출하여 반복문과 같은 효과를 낼 수 있다.
+계속 반복되므로 탈출 조건을 명시하여야 한다.
+'''
+def countDown(n):
+    if n == 0 :
+        print("완료")
+    else :
+        print(n, end = " ")
+        countDown(n-1) #자기자신을 호출
+countDown(5) #5 4 3 2 1 완료
