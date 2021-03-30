@@ -1,13 +1,14 @@
 # 반복문 for
-for i in [1, 2, 3, 4, 5]:
+# split
+for i in [1, 2, 3, 4, 5]:   # index값 1부터 출력
     print(i, end = ' ')
     
 print()
-for i in (1, 2, 3, 4, 5):
+for i in (5, 2, 3, 4, 1):
     print(i, end = ' ')
 
 print()
-for i in {1, 2, 3, 4, 5}:
+for i in {5, 2, 3, 4, 1}:   # set type이라 순서가 존재하지않고 작은수부터 출력
     print(i, end = ' ')
 
 print()
@@ -77,6 +78,7 @@ for d in datas:
     
 print('쉬어가기 ---------')    
 import re
+# 여러줄 작성할때 주석쓸때 사용하는 방식과 동일하게 작성해주면된다.
 ss = '''중앙방역대책본부(방대본)는 9일 0시 기준으로 국내 코로나19 신규 확진자가 303명 늘었다고 밝혔다. 
 누적 확진자는 8만1487명을 기록했다.
 누적 확진자는 8만1487명을 기록했다.
@@ -188,16 +190,17 @@ print('합은', tot)
 ss = 'hello'
 
 for i in range(len(ss)-1):
-    print(ss[i], ss[i+1], sep=' ')
+    print(ss[i], ss[i+1], sep='!!')  # 두 문자열 사이에 '내용'를 넣어줌
 
 print()
 # 단어별 n-gram : 2-gram
 ss2 = 'this is python script'
-words = ss2.split()
+words = ss2.split()     # split 안에 넣어준 값을 기준으로 문자열들을 나눠줌(안적어주면 빈칸 한개기준)
+print(words)
 
-for i in range(len(words)-1):
+for i in range(len(words)-1):   # 범위를 길이값으로 지정해주고싶을때 index는 0부터 시작하므로 -1을해줌
     print(words[i], words[i+1], sep=' ')
-    
+
     
     
     
