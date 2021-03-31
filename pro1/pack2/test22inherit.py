@@ -56,6 +56,7 @@ wo = Worker(33)
 print(wo.say, wo.nai)
 wo.printInfo()
 '''
+
 class Worker(Person):
     def __init__(self,nai):
         print('Worker 생성자 ~~~~~')
