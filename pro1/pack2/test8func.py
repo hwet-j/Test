@@ -1,4 +1,4 @@
-# 변수의 생존 범위 Local > Enclosing function > Global
+# 변수의 생존 범위 Local > Enclosing function > Global 
 
 player = '전국대표'     # Global variable
 
