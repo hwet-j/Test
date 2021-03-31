@@ -1,6 +1,5 @@
 # 메소드 오버라이딩 : 부모 클래스의 메소드와 동일한 이름의 메소드를 자식 클래스에서 만듦(재정의)
 # 다형성의 근거를 제시 
-
 class Parent:
     def printData(self):
         pass
