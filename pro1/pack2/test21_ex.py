@@ -1,4 +1,4 @@
-# 커피 자판기 
+# 커피 자판기  
 
 class CoinIn:
     coin = 0

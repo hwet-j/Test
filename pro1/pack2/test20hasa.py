@@ -1,5 +1,5 @@
 # 일반적으로 test20 의 방식보다는 test19 방식을 선호한다.
-# 냉장고(class)에 음식(class)을 저장
+# 냉장고(class)에 음식(class)을 저장 
 
 class FoodData:
     def __init__(self, irum, yutong):
