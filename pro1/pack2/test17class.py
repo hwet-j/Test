@@ -1,5 +1,4 @@
-# class
-
+# 클래스(class)
 kor = 100
 
 def abc():
