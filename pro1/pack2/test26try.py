@@ -1,4 +1,4 @@
-# 예외처리 : try ~ except - 예상치 않은 에러에 대응하기 위한 문법
+# 예외 처리 : try ~ except - 예상치 않은 에러에 대응하기 위한 문법
 
 def divide(a, b):
     return a / b
