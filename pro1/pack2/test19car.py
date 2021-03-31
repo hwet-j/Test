@@ -1,4 +1,5 @@
 # Car 클래스 : 여러 개의 부품(클래스)을 조립해서 완성차를 생성
+# 사용자정의 모듈 불러오기
 from pack2.test19handle import PohamHandle
 
 class PohamCar:
